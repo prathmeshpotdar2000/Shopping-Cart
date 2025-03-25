@@ -7,35 +7,40 @@ export const ShoppingCart = () => {
             name:"Wireless Headphones",
             desc:"High-quality Bluetooth headphones with noise cancellation and 20-hour battery life.",
             url:"https://honeywellconnection.com/in/wp-content/uploads/2024/08/01-8.jpg",
-            price:550
+            price:550,
+            warrenty:1,
         },
         {
             id:2,
             name:"Smartphone (X100 Pro)",
             desc:"A sleek smartphone with a 6.5-inch AMOLED display, 128GB storage, and a 50MP camera.",
             url:"https://m.media-amazon.com/images/I/71uQJ-blOXL._AC_UF1000,1000_QL80_.jpg"   ,
-            price:23000
+            price:23000,
+            warrenty:1,
         },
         {
             id:3,
             name:"Gaming Laptop (G-Force X15)",
             desc:"A sleek smartphone with a 6.5-inch AMOLED display, 128GB storage, and a 50MP camera.",
             url:"https://en.colorful.cn/en/content/upload/Images/202308/aeadbb28-8cf8-47c7-892a-cde45a17cfb4.png"  ,
-            price:55000
+            price:55000,
+            warrenty:1
         },
         {
             id:4,
             name:"Smartwatch (FitTrack Pro)",
             desc:"A fitness-focused smartwatch with heart rate monitoring and sleep tracking.",
             url:"https://vystahealth.com/wp-content/uploads/2024/08/FitTrack-P2-600x600.jpg"  ,
-            price:3500
+            price:3500,
+            warrenty:1
         },
         {
             id:5,
             name:"Portable Speaker (BoomBass 360)",
             desc:"A fitness-focused smartwatch with heart rate monitoring and sleep tracking.",
             url:"https://www.ubuy.co.in/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkuY28uaWQvNjMzYWI5YzNmODk1NjYwYWVjMWYzZDRkLWVhcmZ1bi11Ym9vbS1ibHVldG9vdGgtc3BlYWtlci5qcGc.jpg"  ,
-            price:4300
+            price:4300,
+            warrenty:1
 
         },
         {
@@ -43,7 +48,8 @@ export const ShoppingCart = () => {
             name:"LED Smart TV (UltraView 55)",
             desc:"A fitness-focused smartwatch with heart rate monitoring and sleep tracking.",
             url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsviu001M4LmvoLppahF3-VzMejAD_ShrcxQ&s"  ,
-            price:30000
+            price:30000,
+            warrenty:1
 
         },
         {
@@ -51,7 +57,8 @@ export const ShoppingCart = () => {
             name:"Electric Kettle (QuickBoil 1.5L)",
             desc:"A fitness-focused smartwatch with heart rate monitoring and sleep tracking.",
             url:"https://m.media-amazon.com/images/I/612KPGvnEJL._AC_UF894,1000_QL80_.jpg"  ,
-            price:7700
+            price:7700,
+            warrenty:1
 
         },
         {
@@ -59,14 +66,16 @@ export const ShoppingCart = () => {
             name:"Running Shoes (AirFlex Pro)",
             desc:"A fitness-focused smartwatch with heart rate monitoring and sleep tracking.",
             url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdAeFKdQETJ-DSceH66gOyqCTVbg5eQ9QQmQ&s"  ,
-            price:2200
+            price:2200,
+            warrenty:1
         },
         {
             id:9,
             name:"Coffee Maker (BrewMaster 500)",
             desc:"A fitness-focused smartwatch with heart rate monitoring and sleep tracking.",
             url:"https://m.media-amazon.com/images/I/61dkxmw1bPL._AC_UF894,1000_QL80_.jpg"  ,
-            price:1400
+            price:1400,
+            warrenty:1
 
         },
         {
@@ -74,21 +83,24 @@ export const ShoppingCart = () => {
             name:"Backpack (UrbanGear Pro)",
             desc:"A fitness-focused smartwatch with heart rate monitoring and sleep tracking.",
             url:"https://imagesm.plexussquare.in/URBANGEAR/Images/04-12-2021/1638620096307.jpeg"  ,
-            price:6500
+            price:6500,
+            warrenty:1
         },
         {
             id:11,
             name:"Charger Adapter (UrbanGear Pro)",
             desc:"A fitness-focused smartwatch with heart rate monitoring and sleep tracking.",
             url:"https://www.amkette.com/cdn/shop/files/PowerPro_2_PortQC_QC_Car_Charger_with_Multifunction_USB_Cable_hero_image.png?v=1689162294"  ,
-            price:500
+            price:500,
+            warrenty:1
         },
         {
             id:12,
             name:"Smart Drone (UrbanGear Pro)",
             desc:"A fitness-focused smartwatch with heart rate monitoring and sleep tracking.",
             url:"https://m.media-amazon.com/images/I/51Pd4vyNiaL._AC_UF1000,1000_QL80_.jpg"  ,
-            price:1500
+            price:1500,
+            warrenty:1
         }
 
     ];
@@ -165,7 +177,7 @@ export const ShoppingCart = () => {
                 <p className="font-bold">NAME: <span className="font-medium">{singleproduct.name}</span></p>
                 <p className="font-bold">DESC: <span className="font-normal">{singleproduct.desc}</span></p>
                 <p className="font-bold">PRICE: <span className="font-normal">{singleproduct.price}</span></p>
-                
+                <p className="font-bold">Warrenty: <span className="font-normal">{singleproduct.warrenty}</span></p>
                 <button className="w-[230px] border border-black flex flex-col justify-center hover:bg-blue-400 shadow-lg shadow-cyan-500/50" onClick={()=>buttonChange(singleproduct)}>Add To Cart</button>
                 
             </div>

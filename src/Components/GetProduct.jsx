@@ -10,7 +10,7 @@ import { getProduct } from "../services/productService";
 ModuleRegistry.registerModules([ClientSideRowModelModule]);
 export const GetProduct=()=>{
 
-    const [prod,setProd] = useState([]);
+    const [prod,setProd] = useState([]); 
 
     useEffect(()=>{
         // async function getData(){
