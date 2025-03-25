@@ -180,7 +180,7 @@ export const ShoppingCart = () => {
                 <p className="font-bold">PRICE: <span className="font-normal">{singleproduct.price}</span></p>
                 <p className="font-bold">Warrenty: <span className="font-normal">{singleproduct.warrenty}</span></p>
                 <button className="w-[230px] border border-black flex flex-col justify-center hover:bg-blue-400 shadow-lg shadow-cyan-500/50" onClick={()=>buttonChange(singleproduct)}>Add To Cart</button>
-                
+                <hr className="border-t border-gray-800"/>
             </div>
         })}
 
@@ -218,8 +218,8 @@ export const ShoppingCart = () => {
                     <p className="font-bold">PRICE: <span className="font-normal">{item.price}</span></p> 
                     <p className="font-bold">DESC: <span className="font-normal">{item.desc}</span></p> 
                     <p className="font-bold"> <span className="absolute top-2 right-2 bg-blue-500 text-white px-3 py-1 rounded-full">{item.quantity}</span></p>
+                            
                         </div>
-                        
                         <div>
                        <button className="w-[230px] border border-black flex flex-col justify-center hover:bg-red-400 shadow-lg shadow-cyan-500/50" onClick={() => removeFromCart(item.id)}>Remove From Cart</button>
                     </div>
