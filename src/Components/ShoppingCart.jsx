@@ -168,6 +168,7 @@ export const ShoppingCart = () => {
   return (
     <>     
      <h1 className='text-center text-blue-500 text-4xl p-5 sticky top-0 w-full bg-white shadow-md shadow-cyan-500/50'>Shopping Cart</h1>
+      <p className="ml-3 mt-3 text-3xl text-blue-500">Product List</p>
       <div id="cart-section" className="wrapper flex w-full flex-wrap justify-center gap-5 p-10">
         {products.map((singleproduct,index)=>{
                 
